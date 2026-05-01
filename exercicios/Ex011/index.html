@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplismente aumente ou diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/jpg">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+   
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos reproduzir audios em HTML5</p>
+    <audio preload="metadata" controls>
+        <source src="midia/rap-gta.mp3" type="audio/mpeg">
+    </audio>
+    <p>infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/rap-gta.mp3">clique aqui</a> para baixar o aquivo MP3</p>
+</body>
+</html>
