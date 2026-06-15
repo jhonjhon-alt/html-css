@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+
+        }
+
+        thead > tr >th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABRLAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR,TD,TH
+            TBODY
+                TR,TD,TH
+             TFOOT
+                TR,TD,TH
+    -->
+    <table>
+        <caption>População dos Estados Brasileiros</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.289.333</td>
+
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.411.927</td>
+
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">13.864.025</td>
+
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.930.634</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.597.484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.422.973</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.616.621</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.240.580</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.690.745</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.269.995</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">3.567.234</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3.514.952</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3.256.117</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.534.165</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num" >7.153.262</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.281.480</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.351.543</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.094.325</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.318.822</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.815.278</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.590.248</td>
+            </tr>
+             <tr>
+                <td>Acre</td>
+                <td class="num">906.876</td>
+            </tr>
+             <tr>
+                <td>Amapá</td>
+                <td class="num">861.773</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">631.181</td>
+            </tr>
+            <tr>
+                <td>santa Catarina</td>
+                <td class="num" >7.252.502</td>
+            </tr>
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>213.421.037</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi, porro vitae at iure tempora. Fugiat expedita aspernatur aperiam dolore quisquam, harum quia dicta corporis illum, fuga impedit amet. Natus.
+    </p>
+    <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi, porro vitae at iure tempora. Fugiat expedita aspernatur aperiam dolore quisquam, harum quia dicta corporis illum, fuga impedit amet. Natus.
+    </p>
+    <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi, porro vitae at iure tempora. Fugiat expedita aspernatur aperiam dolore quisquam, harum quia dicta corporis illum, fuga impedit amet. Natus.
+    </p>
+    <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi, porro vitae at iure tempora. Fugiat expedita aspernatur aperiam dolore quisquam, harum quia dicta corporis illum, fuga impedit amet. Natus.
+    </p>
+    <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi, porro vitae at iure tempora. Fugiat expedita aspernatur aperiam dolore quisquam, harum quia dicta corporis illum, fuga impedit amet. Natus.
+    </p>
+    <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi, porro vitae at iure tempora. Fugiat expedita aspernatur aperiam dolore quisquam, harum quia dicta corporis illum, fuga impedit amet. Natus.
+    </p>
+    <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi, porro vitae at iure tempora. Fugiat expedita aspernatur aperiam dolore quisquam, harum quia dicta corporis illum, fuga impedit amet. Natus.
+    </p>
+    <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi, porro vitae at iure tempora. Fugiat expedita aspernatur aperiam dolore quisquam, harum quia dicta corporis illum, fuga impedit amet. Natus.
+    </p>
+    <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi, porro vitae at iure tempora. Fugiat expedita aspernatur aperiam dolore quisquam, harum quia dicta corporis illum, fuga impedit amet. Natus.
+    </p>
+    <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi, porro vitae at iure tempora. Fugiat expedita aspernatur aperiam dolore quisquam, harum quia dicta corporis illum, fuga impedit amet. Natus.
+    </p>
+    <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet consectetur adipisicing elit lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi, porro vitae at iure tempora. Fugiat expedita aspernatur aperiam dolore quisquam, harum quia dicta corporis illum, fuga impedit amet. Natus.
+    </p>
+</body>
+
+</html>
